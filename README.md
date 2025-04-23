@@ -1,64 +1,34 @@
+Project Title: 
+Pizza Sales Analysis with SQL Workbench
 
-Project Title:
-Pizza Sales Analysis with SQL By Akshat Srivastava
+Project Overview:  
+This project demonstrates how to model, query, and analyze a simple pizza‐shop sales database using SQL Workbench. By defining a clear relational schema and writing targeted SQL statements, it uncovers key sales insights—like top‐selling pizzas, peak ordering times, and revenue breakdowns by pizza type.
 
-Objective:
-Leverage SQL to explore and answer key business questions about a pizza chain’s sales data, helping stakeholders understand ordering patterns, customer behavior, and product performance.
+Database Schema: 
+1. `pizza_types`  
+   - Defines each pizza variety (e.g., Margherita, Pepperoni) and its base price.  
+2. `pizza`  
+   - Extends `pizza_types` with any customization or sizing details (small/medium/large).  
+3. `orders`  
+   - Captures each customer order with order date/time.  
+4. `order_details`  
+   - Links `orders` to `pizza` items, including quantity, per‐unit price (in case of discounts), and line‐item totals.
 
-Dataset & Tools:
+Key Analyses & Queries:  
+• Top‑Selling Pizzas: Identify which pizza types drive the most revenue and volume.  
+• Sales Trends Over Time: Track daily/weekly revenue to spot peak sales periods.  
+• Average Order Value: Compute per–order averages to assess customer spend behavior.  
+• Type‑Based Performance: Compare how different pizza types perform in terms of units sold and profitability.  
+• Order Composition: Analyze how many items customers typically order per visit.
 
-Data Source: CSV tables (Orders, Customers, Menu, Order_Items, etc.)
+Why It Matters:  
+- Business Insights: Empowers pizza shop managers to optimize menus, pricing, and promotions.  
+- SQL Proficiency: Showcases ability to design normalized schemas, write JOINs, aggregate functions, window functions, and subqueries.  
+- Data‐Driven Decisions: Illustrates how even small datasets can yield actionable operational insights.
 
-Environment: MySQL / SQL Workbench
+Next Steps / Extensions: 
+- Integrate customer segmentation (loyalty tiers, geographic regions).  
+- Add ingredient‐level tables to analyze topping popularity.  
+- Build a dashboard layer (e.g., via Tableau or Power BI) for real‐time monitoring.  
+- Introduce predictive models to forecast demand and optimize inventory.
 
-Core Components & Queries:
-
-- Sales Summaries
-
-    Total and average order value per month
-
-    Year‑over‑year growth of revenue
-
-- Customer Insights
-
-    Top 10 customers by spend
-
-    Customer retention: count of repeat vs. one‑time buyers
-
-- Menu Performance
-
-    Best‑ and worst‑selling pizza types
-
-    Revenue contribution by category (e.g., beverages, sides, desserts)
-
-- Order Patterns
-
-    Peak ordering hours and days of week
-
-    Analysis of order size (number of items per order)
-
-- Promotions & Discounts
-
-    Impact of discount codes on average order value
-
-    Uptake rate of promotional offers
-
-Key Takeaways:
-
-  - High‑Value Segments: A small group of power‑users drives a large share of revenue.
-  
-  - Menu Optimization: Certain pizza varieties underperform and may be candidates for removal or re‑promotion.
-  
-  - Operational Scheduling: Peak demand times identified for staffing and kitchen readiness.
-  
-  - Marketing Effectiveness: Discounts increase order frequency but can erode margin if over‑used.
-
-Business Impact:
-  
-  - Data‑driven recommendations to streamline menu offerings
-  
-  - Targeted marketing strategies for top customers
-  
-  - Better staffing forecasts during peak periods
-  
-  - Optimized promotional campaigns to maximize profit
