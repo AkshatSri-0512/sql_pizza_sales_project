@@ -12,7 +12,7 @@ Database Schema:
 3. `orders`  
    - Captures each customer order with order date/time.  
 4. `order_details`  
-   - Links `orders` to `pizza` items, including quantity, per‐unit price (in case of discounts), and line‐item totals.
+   - Links `orders` to `pizza` items, including quantity, order_id.
 
 Key Analyses & Queries:  
 • Top‑Selling Pizzas: Identify which pizza types drive the most revenue and volume.  
